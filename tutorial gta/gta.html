@@ -1,24 +1,96 @@
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
 <style>
+html, body{
+background: #212121 !important;
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
 .coco{
-    margin-left: 50px;
-    display: grid;
+    margin-left: 25px;
     margin-top: 10px;
-	width: 5vw;
-	margin-left: 50px;
 	height: 5vw;
 }
 .globox{
 margin-left: 50px;
-width: 20vw;
+padding: 10px
+width: 22vw;
 margin-top: 10px;
-height: 5vw;
+height: auto;
+min-width: 240px;
+min-height: 50px;
+margin: 10px 50px 20px !important;
+padding: 0px;
+background: linear-gradient(145deg, #ff4d4d, #cc0000) !important;
+border: 4px solid #333 !important;
+border-top: 6px solid #ff8080 !important;
+border-left: 6px solid #ff5c5c !important;
+border-right: 6px solid #8000000;
+border-bottom: 6px solid #600000;
+display: inline-flex !important;
+justify-content: center;
+align-items: center;
+color: !important;
+font-weight: bold !important;
+font-size: 1.4rem !important;
+border-radius: 12px !important;
+text-decoration: none !important;
+box-shadow: 
+0 6px 0 #550000,
+0 0 40px rgba(255, 0, 0, 0.4),
+inset 0 10px 12px rgba(255,255,255,0.8),
+inset 0 -8px 15px rgba(0,0,0,0.9) !important;
+overflow: hidden;
+transition: all 0.15s ease !important;
+position: relative;
+transform: translateY(0);
+cursor: url(ps-juego.png), pointer !important;
 }
+.globox img{
+width: 100%;
+height: auto;
+display: block;
+border-radius: 10px;
+filter: drop-shadow(0 0 12px rgba(255,255,255,0.7));
+}
+.globox::before{
+content:"";
+position: absolute;
+top: 0;
+left: -140%;
+width: 80%;
+height: 100%;
+background: linear-gradient(90deg,
+transparent 0%, rgba(255,80,80,0.2) 40%,
+rgba(255,0,0,0.7) 50%,
+rgba(255,80,80,0.2) 60%, transparent 100%);
+transform: skewX(-25deg);
+transition: left 0.7s ease;
+}
+.globox:hover::before{ left: 150%; }
+.globox:hover{
+transform: translateY(-7px) !important;
+box-shadow: 
+0 20px 0 #000,
+0 0 60px rgba(255, 60, 60, 0.9);
+inset 0 12px 18px rgba(255,255,255,0.25),
+inset 0 -10px 15px rgba(0,0,0,0.9);
+}
+.globox:active{
+transform: translateY(8px) !important;
+box-shadow:
+0 6px 0 #000,
+0 0 25px rgba(255, 0, 0, 0.8),
+inset 0 4px 8px rgba(255,255,255,0.1),
+inset 0 -6px 8px rgba(0,0,0,0.1) !important;
+}
+
 .raymantube{
 display: flex;
 }
@@ -27,81 +99,452 @@ width: 7vw;
 border-radius: 50%;
 margin-left: 20px;
 height: 5vw;
-.dragones{
-display: flex;
 
 }
-}
-.dragones{
+.raymantube{
 display: flex;
+align-items: center;
+padding: 20px;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
 
-}
-.tutorial{
-display: flex;
-margin-left: 150px;
-position: relative;
-overflow: hidden;
-width: 50%;
-margin-top: 10px;
-}
-.tutorial iframe{
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-width: 49%;
-height: 40%;
+
+.raymantube a input[type="image"] {
+width: 100% !important;
+max-width: 300px;
+height: auto;
+margin: 10px auto;
 }
 .equipo{
+display: block !important;
+text-align: center !important;
+width: 100% !important;
+margin-top: 1px !important;
 text-decoration: none;
 color: rgb(9, 67, 214);
 margin-left: 20px;
 font-size: 1.5rem;
+word-break: break-word;
+}
+.dragones{
+justify-content: center;
+flex-wrap: wrap;
+padding: 20px 10px;
+}
+.tutorial{
+display: flex;
+justify-content: center;
+position: relative;
 }
 .descarga{
-margin-left: 200px;
+margin-left: 50px;
+font-size: 2.0rem;
+width: calc(100% - 50px);
+margin-top: -30px;
+color: #FFFAFA;
 }
 .aventura{
-text-decoration: none;
-font-size: 1.2rem;
-margin-left: 200px;
-color: rgb(9, 67, 214);
-
+display: inline-flex !important;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-left: 50px;
+width: 300px !important;
+margin-top: 5px !important;
+height: 50px;
+margin-bottom: 40px !important;
+cursor: url(ps-juego.png), pointer !important;
+background: linear-gradient(145deg, #2d2d2d, #111111) !important;
+color: #fff !important;
+text-shadow: 0 0 8px #00ffff, 2px 2px 0 #000;
+border: 3px solid #444 !important;
+border-top: 4px solid #00ffff !important;
+border-left: 4px solid #00ffff !important;
+font-weight: 900 !important;
+font-size: 1.0rem !important;
+font-family: "Arial Black", Arial, sans-serif !important;
+text-transform: uppercase;
+letter-spacing: 2px;
+border-radius: 8px !important;
+text-decoration: none !important;
+box-shadow: 
+0 8px 0 #000,
+0 0px 20px rgba(0, 255, 255, 0.4),
+inset 0 6px 10px rgba(255,255,255,0.2),
+inset 0 -6px 10px rgba(0,0,0,0.7) !important;
+transition: all 0.12s ease-out !important;
+position: relative;
+overflow: hidden;
+transform: translateY(0);
 }
-.bosque{
-margin-left: 200px;
+.aventura::before{
+content:"";
+position: absolute;
+top: 0;
+left: -150%;
+width: 60%; height: 100%;
+background: linear-gradient(90deg, transparent 0%, 
+rgba(255, 255, 255, 0.0) 20%,
+rgba(255, 255, 255, 0.5) 20%,
+rgba(255, 255, 255, 0.0) 80%,
+transparent 100%);
+transform: skewX(-20deg);
+transition: left 0.8s ease;
 }
-
-.personaje{
-text-decoration: none;
-font-size: 1.2rem;
-margin-left: 200px;
-color: rgb(9, 67, 214);
-
+.aventura:hover::before{ 
+left:150%;}
+.aventura:hover{
+background: linear-gradient(145deg, #3d3d3d, #222222) !important;
+border-top-color: #00ffff !important;
+border-left-color: #00ccff !important;
+transform: translateY(-4px) !important;
+box-shadow: 0 14px 0 #000,
+0 0 30px rgba(0 , 255, 255, 0.7),
+inset 0 6px 15px rgba(0, 255, 255, 0.35) !important;
+}
+@keyframes brillo{
+0% { transform: translateX(-100%); }
+100% { transform: translateX(100%); }
+}
+.aventura:active{
+transform: translateY(6px) !important;
+box-shadow:
+0 4px 0 #000,
+0 0 15px rgba(0, 255, 255, 0.5) !important;
+}
+.aventura,
+.aventura * {
+cursor: url('ps-juego.png'), auto !important;
 }
 .dragon{
-font-zise: 1rem;
-margin-left: 10px;
+font-size: 2.0rem;
+margin-left: 50px;
+width: calc(100% - 50px);
+margin-bottom: 0;
+margin-top: 10px;
+color: #FFFAFA;
+}
+.bosque{
+margin-left: 50px;
+font-size: 2.0rem;
+width: calc(100% - 50px);
+margin-top: 10px;
+color: #FFFAFA;
+}
+.personaje{
+display: inline-flex !important;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin-left: 50px;
+width: 300px !important;
+margin-top: 5px !important;
+height: 50px;
+margin-bottom: 40px !important;
+cursor: url(ps-juego.png), pointer !important;
+background: linear-gradient(145deg, #2d2d2d, #111111) !important;
+color: #fff !important;
+text-shadow: 0 0 8px #00ffff, 2px 2px 0 #000;
+border: 3px solid #444 !important;
+border-top: 4px solid #00ffff !important;
+border-left: 4px solid #00ffff !important;
+font-weight: 900 !important;
+font-size: 1.0rem !important;
+font-family: "Arial Black", Arial, sans-serif !important;
+text-transform: uppercase;
+letter-spacing: 2px;
+border-radius: 8px !important;
+text-decoration: none !important;
+box-shadow: 
+0 8px 0 #000,
+0 0px 20px rgba(0, 255, 255, 0.4),
+inset 0 6px 10px rgba(255,255,255,0.2),
+inset 0 -6px 10px rgba(0,0,0,0.7) !important;
+transition: all 0.12s ease-out !important;
+position: relative;
+overflow: hidden;
+transform: translateY(0);
+}
+.personaje::before{
+content:"";
+position: absolute;
+top: 0;
+left: -150%;
+width: 60%; height: 100%;
+background: linear-gradient(90deg, transparent 0%, 
+rgba(255, 255, 255, 0.0) 20%,
+rgba(255, 255, 255, 0.5) 20%,
+rgba(255, 255, 255, 0.0) 80%,
+transparent 100%);
+transform: skewX(-20deg);
+transition: left 0.8s ease;
+}
+.personaje:hover::before{ 
+left:150%;}
+.personaje:hover{
+background: linear-gradient(145deg, #3d3d3d, #222222) !important;
+border-top-color: #00ffff !important;
+border-left-color: #00ccff !important;
+transform: translateY(-4px) !important;
+box-shadow: 0 14px 0 #000,
+0 0 30px rgba(0 , 255, 255, 0.7),
+inset 0 6px 15px rgba(0, 255, 255, 0.35) !important;
+}
+@keyframes brillo{
+0% { transform: translateX(-100%); }
+100% { transform: translateX(100%); }
+}
+.personaje:active{
+transform: translateY(6px) !important;
+box-shadow:
+0 4px 0 #000,
+0 0 15px rgba(0, 255, 255, 0.5) !important;
+}
+.personaje,
+.personaje * {
+cursor: url('ps-juego.png'), auto !important;
+}
+video{
+display: block !important;
+margin: 0 auto !important;
+max-width: 100% !important;
+height: auto !important;
+}
+@media (max-width: 768px){
+.dragones{
+flex-direction: column;
+align-items: center;
+padding: 10px;
+}
+.raymantube{
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.coco{
+width: 22vw;
+height: auto;
+margin: 0;
+}
+.globox{
+width: 40vw;
+height: 12vw;
+}
+.aventura{
+cursor: url(ps-juego.png), pointer !important;
+border-radius: 20px !important;
+box-shadow:
+0 12px 0 #0044aa,
+0 0 20px rgba(0,170,255,0.8),
+inset 0 -8px 0 rgba(0,0,0,0.3),
+inset 0 8px 0 rgba(255,255,255,0.3) !important;
+width: 78% !important;
+display: flex !important;
+margin-left: auto !important;
+margin-right: auto !important;
+height: 48px !important;
+font-size: 0.9rem !important;
+align-items: left;
+text-align: center
+justify-content: center;
+}
+.personaje{
+cursor: url(ps-juego.png), pointer !important;
+border-radius: 20px !important;
+box-shadow:
+0 12px 0 #0044aa,
+0 0 20px rgba(0,170,255,0.8),
+inset 0 -8px 0 rgba(0,0,0,0.3),
+inset 0 8px 0 rgba(255,255,255,0.3) !important;
+width: calc(70% - 20px) !important;
+display: flex !important;
+margin: 5px auto 25px !important;
+height: 45px !important;
+font-size: 0.9rem !important;
+align-items: left;
+text-align: center
+justify-content: center;
+}
+.rayman{
+width: 18vw;
+height: auto;
+margin: 0;
+}
+.tutorial{
+margin: 0 auto !important;
+display: block;
+width: 100%;
+max-width: 100%;
+order: 1;
+margin-left: 0;
+margin-right: 0;
+margin: 20px auto !important;
+cursor: pointer;
+border-radius: 16px !important;
+overflow: hidden !important;
+box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important;
+position: relative;
 
+}
+.equipo{
+margin: 18px 0 0 0 !important;
+text-align: center;
+margin-left: 0;
+margin-right: 0;
+padding: 0 !important;
+border-top: none;
+order: 2;
+width: 100%;
+margin-top: 1px !important;
+padding-top: 5px !important;
+padding-bottom: 15px !important;
+}
+.descarga, .bosque, .dragon{
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+font-size: 1.1rem;
+padding: 10px;
+}
+}
+.boton-youtube{
+display: inline-block !important;
+background: linear-gradient(145deg, #aa0000, #880000) !important;
+border-top: 4px solid #ff3333 !important;
+color: white !important;
+font-weight: bold !important;
+font-size: 1.4rem !important;
+padding: 12px 40px !important;
+border-radius: 40px !important;
+text-decoration: none !important;
+box-shadow: 0 8px #440000, 0 0 20px rgba(255,255,255,0.6) !important;
+transition: all 0.2s !important;
+cursor: url(ps-juego.png), pointer !important;
+margin-top: 10px;
+}
+.boton-youtube:hover{
+background: linear-gradient(145deg, #cc0000, #880000) !important;
+transform: translateY(-4px);
+box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+.boton-youtube:active{
+transform: translateY(6px) !important;
+box-shadow: 0 4px 0 #440000 !important;
 }
 
 
+video,
+video * {
+cursor: auto !important;
+image-rendering: crisp-edges;
+}
+html * {
+cursor: url('ps-cursor.png'), auto !important;
+}
+body, *, *::before, *::after {
+box-sizing: border-box;
+cursor: url('ps-cursor.png'), !important;
+}
+.play-button-universal{
+position: absolute;
+left: 50%;
+top: 50%;
+width: 95px;
+height: 95px;
+background: black;
+border-radius: 50%;
+transform: translate(-50% , -50%);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 20;
+cursor: pointer;
+}
+.play-button-universal::before {
+content:"";
+width: 0;
+height: 0;
+border-left: 38px solid white;
+border-top: 24px solid transparent;
+border-bottom: 24px solid transparent;
+margin-left: 6px;
+}
+.play-button-universal.hidden {
+display: none;
+}
 </style>
 </head>
-<body background="rayman/coco bandicoot/color.png" bgcolor="white" text="black">
+<body>
 <div class="raymantube">
 <img class="coco" src="../raymantube/raymantube.png" >
 <a href="../raymantube/raymantube.html"><img class="globox" src="../raymantube/canal.png"></a>
-<img class="rayman" src="../raymantube/perfil-rayman.png"></a></div>
+<img class="rayman" src="../raymantube/perfil-rayman.png"></div>
 <div class="dragones">
-<video class="tutorial" controls>
+<div class="tutorial" style="position:relative; max-width: 500px; margin:auto;">
+<div class="play-button-universal" id="playUniversal"></div>
+<video id="video" playsinline preload="metadata" controls controlslist="nodownload noremoteplayback">
 <source src="gta.mp4" type="video/mp4">
-</video><a class="equipo" href="https://www.youtube.com/@equipoloquendooficial-y2z">suscribete al canal de youtube enlace: https://www.youtube.com/@equipoloquendorayman</div></a>
+</video></div>
+<p class="equipo"><a href="https://www.youtube.com/@canalbandicoot" target="_blank" class="boton-youtube">SUSCRIBIRSE</a></p></div>
 <h1 class="descarga">enlace de descarga:</h1>
-<a class="aventura" href="https://drive.google.com/file/d/1fCf_KfRHJk-L29LrXX3Ldxa-4KosR1Gb">https://drive.google.com/file/d/1fCf_KfRHJk-L29LrXX3Ldxa-4KosR1Gb</a>
+<a class="aventura" href="https://drive.google.com/file/d/1fCf_KfRHJk-L29LrXX3Ldxa-4KosR1Gb">google drive</a>
 <h1 class="bosque">detalles del juego:</h1>
-<a class="personaje" href="../gta san andreas/gta san andreas.html">https://equipoloquendo.neocities.org/rayman/gta%20san%20andreas/gta%20san%20andreas</a>
-<h1 class="dragon">debido a los lineamientos de seguridad de youtube no podremos mostrar enlaces de juegos y programas completos en youtube pero aqui en raymantube encontraran todo tipo de juegos y programas completos </h1>
-<div>
+<a class="personaje" href="../gta san andreas/gta san andreas.html">gta san andreas</a>
+<h1 class="dragon">debido a los lineamientos de la comunidad de youtube no podremos mostrar enlaces de juegos y programas completos en youtube pero aqui en raymantube encontraran todo tipo de juegos y programas completos </h1>
+<audio id="hoverSound" preload="auto">
+<source src="gta-menu.mp3" type="audio/mpeg">
+</audio>
+<script>
+const video = document.getElementById("video");
+const playBtnU = document.getElementById("playUniversal");
+video.addEventListener("play", () => {
+playBtnU.classList.add("hidden");
+});
+video.addEventListener("click", (e) => {
+if (!video.paused) {
+video.pause();
+playBtnU.classList.remove("hidden");
+e.stopPropagation();
+e.preventDefault();
+}
+});
+video.addEventListener("touchstart", (e) => {
+video.setAttribute("controls", "true");
+}, { passive: true });
+playBtnU.addEventListener("click", () => {
+video.play();
+playBtnU.classList.add("hidden");
+});
+const sonido = document.getElementById('hoverSound');
+let audioDesbloqueado = false;
+function desbloquearAudio() {
+if (audioDesbloqueado) return;
+sonido.play().then(() => {
+sonido.pause();
+sonido.currentTime = 0;
+audioDesbloqueado = true;
+console.log("Audio desbloqueado correctamente");
+}).catch(() => {});
+};
+function reproducirSonido() {
+if (!audioDesbloqueado) return;
+sonido.currentTime = 0;
+sonido.play();
+}
+const intentarDesbloquear = () => desbloquearAudio ();
+document.querySelectorAll('.aventura, .personaje').forEach(boton => {
+boton.addEventListener('mouseenter', reproducirSonido);
+boton.addEventListener('touchstart', () => {
+desbloquearAudio();
+reproducirSonido();
+}, { passive: true });
+});
+document.addEventListener('mousemove', intentarDesbloquear, { once: true });
+document.addEventListener('keydown', intentarDesbloquear, { once: true });
+document.addEventListener('click', intentarDesbloquear, { once: true });
+document.addEventListener('touchstart', intentarDesbloquear, { once: true });
+</script>
 </body>
 </html>
