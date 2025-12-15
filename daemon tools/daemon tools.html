@@ -1,17 +1,119 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
+<style>
+body{
+background-image: url("../daemon tools/a.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center-top;
+margin: 0;
+text-align: center;
+color: white;
+}
+.titulo{
+font-family: gabriola;
+font-size: 70px;
+color: #4FB6FF;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto{
+font-family; gabriola;
+font-size: 50px;
+color: #4FB6FF;
+max-width: 900px;
+margin: auto;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.detalle{
+font-family: gabriola;
+font-size: 50px;
+color: #4FB6FF;
+margin: 5px 0;
+line-height: 1.1;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+.logo{
+width: 400px;
+}
+.boton{
+width: 300px;
+max-width: 90vw;
+}
+.media{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-bottom: 30px;
+padding-top: 10px;
+}
+
+@media (max-width: 480px){
+.logo{
+width: 90vw;
+}
+.boton{
+width: 85vw;
+}
+.titulo{
+font-size: 2rem;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto, .detalle{
+flex-direction: column;
+font-size: 1.6rem;
+padding: 0 15px;
+margin: 6px 0;
+line-height: 1.2;
+font-size: 2rem;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+}
+</style>
 </head>
 
-<body background="../daemon tools/a.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;" text="white">
-<center><font face="gabriola" size=9 color="pantone">descargar daemon tools full</font></center>
-<center><font face="gabriola" size=9 color="pantone">DAEMON Tools es un emulador de imágenes de disco propietario para Microsoft Windows. La aplicación permite al usuario montar "imágenes de disco" de CD y DVD así como (lógicamente) las de unidades virtuales. También incluye varios mecanismos para intentar evitar algunas de las protecciones anticopia más extendidas.</font></center>
-<center><font face="gabriola" size=9 color="pantone">publicidad:no</font></center>
-<center><font face="gabriola" size=9 color="pantone">peso:25.3mb</font></center>
-<center><font face="gabriola" size=9 color="pantone">descarga:drive</font></center>
-<center><a href="https://drive.google.com/file/d/1oi0Etq1MjdGB03uY1zIfnZ6Jt7xCovph/view?usp=sharing"><br><input type="image" src="../daemon tools/boton-daemon-tools.png" style="border: none;" height="400" width="400"/></button></a></center>
+<body>
+<h1 class="titulo">descargar daemon tools full</h1>
+<p class="texto">DAEMON Tools es un emulador de imágenes de disco propietario para Microsoft Windows. La aplicación permite al usuario montar "imágenes de disco" de CD y DVD así como (lógicamente) las de unidades virtuales. También incluye varios mecanismos para intentar evitar algunas de las protecciones anticopia más extendidas.</p>
+<p class="detalle">publicidad:no</p>
+<p class="detalle">peso:25.3mb</p>
+<p class="detalle">descarga:drive</p>
+<div class="media">
+<a href="https://drive.google.com/file/d/1oi0Etq1MjdGB03uY1zIfnZ6Jt7xCovph/view?usp=sharing">
+<img src="../daemon tools/boton-daemon-tools.png" class="boton">
+</a>
+</div>
 </body>
 </html>
