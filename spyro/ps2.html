@@ -1,28 +1,217 @@
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
+<style>
+body{
+background: black url("../coco bandicoot/portatil.jpg");
+background-size: cover;
+color: white;
+font-family: arial, sans-serif;
+text-align: center;
+}
+a {
+text-decoration: none;
+}
+.grid{
+max-width: 1200px;
+margin: 40px auto 0 auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+width: 90%;
+}
+.item{
+position: relative;
+text-align: center;
+}
+
+.game-btn{
+width: 80%;
+height: 90%;
+display: block;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: #0a0f12;
+border: 3px solid #00c8ff;
+border-radius: 12px;
+padding: 0;
+cursor: pointer;
+box-shadow: 0 8px 0 #0099b3, 
+0 0 25px #00eaff70,
+inset 0 0 20px #003f47;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+aspect-ratio: 1/1 !important;
+position: relative;
+overflow: hidden;
+}
+.game-btn img{
+width: 100%;
+height: 100%;
+border-radius: 12px;
+filter: brightness(0.95) saturate(1.15);
+pointer-events: none;
+background: #0a0f12;
+object-position: center;
+z-index: 1;
+object-fit: fill;
+padding: 2px;
+}
+.game-btn span{
+position: absolute;
+transform: translateX(-50%);
+left: 50%;
+padding: 6px 10px;
+text-align: center;
+bottom: 12px;
+width: 90%;
+background: rgba(0,0,0,0.55);
+backdrop-filter: blur(3px);
+font-size: 1.3rem;
+font-weight: bold;
+color: #00f8ff;
+text-shadow: 0 0 8px #00eaff;
+pointer-events: none;
+border-radius: 8px;
+text-transform: uppercase;
+z-index: 2;
+}
+.game-btn:hover{
+transform: translateY(-8px);
+box-shadow: 0 14px 0 #0099b3,
+inset 0 0 25px #005f66,
+ 0 0 35px #00eaff;
+}
+.game-btn:active{
+transform: translateY(4px);
+box-shadow: 0 3px 0 #004e59,
+0 0 10px #00eaff;
+}
+.item button{
+background: transparent;
+border: none;
+color: gold;
+cursor: pointer;
+font-size: 2rem;
+margin-top: 10px;
+}
+.menu{
+width: 100%;
+text-align: center;
+margin-top: 20px;
+}
+.logo-juego{
+width: 150px;
+height: auto;
+}
+.top-buttons{
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 10px;
+}
+.logo-pc{
+width: 200px;
+height: auto;
+}
+.btn-back{
+width: 200px;
+height: auto;
+border: none;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+.grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+width: 95%;
+margin: auto;
+padding-top: 50px;
+}
+.game-btn{
+width: 100%;
+height: auto;
+aspect-ratio: 1/1;
+}
+.game-btn span{
+height: 2.4rem;
+}
+.top-buttons{
+
+gap: 10px;
+}
+.logo-juego{
+width: 80px;
+}
+.logo-pc,
+.btn-back{
+width: 200px;
+
+}
+}
+@media (max-width: 359px) {
+.grid {
+grid-template-columns: repeat(1, 1fr);
+gap: 20px;
+width: 95%;
+justify-content: center;
+padding: 10px;
+overflow: hidden !important;
+
+}
+.game-btn{
+width: 100%;
+height: auto;
+aspect-ratio: 1/1;
+
+}
+.top-buttons{
+gap: 10px;
+
+}
+.game-btn span{
+font-size: 1rem;
+}
+.logo-pc,
+.btn-back{
+width: 100px;
+}
+.logo-juego{
+width: 80px;
+}
+}
+</style>
 </head>
-
-<body background="../coco bandicoot/playstation.png" style="background-repeat: no-repeat; background-size: 100% 100%;" text="white"bgcolor="black" text="white"bgcolor="black" text="white">
-
-<img src="../coco bandicoot/juego.png" width="300px" height="300px" alt="logo de nuestra pagina web por equipo loquendo">
-
-<img src="../coco bandicoot/ps2.png" width="200px" height="75px" alt="logo de nuestra pagina web por equipo loquendo">
-<a href="../index.html" title="ir a la pagina anterior"><input type="image" src="../coco bandicoot/pagina.png" style="border: none;" height="75" width="200"/></button></a>
-
-<br><img src="../crash bandicoot 4/images.png" style="margin-top: 50px;" width="150px" height="100px">
-<a href="../crash bandicoot 4/crashbandicoot4.html"><br><button style="background-color:transparent; border-color:transparent; color:red; cursor:pointer;">crash bandicoot 4</button></a>
-<br><img src="../crash nitro kart/crash nitro kart.jpg" width="150px" height="100px">
-<a href="../crash nitro kart/crash nitro kart.html"><br><button style="background-color:transparent; border-color:transparent; color:red; cursor:pointer;">crash nitro kart</button></a>
-<br><img src="../crash tag team racing/download.jpg" width="150px" height="100px">
-<a href="../crash tag team racing/crash tag team racing.html"><br><button style="background-color:transparent; border-color:transparent; color:red; cursor:pointer;">crash tag team racing</button></a>
-<br><img src="../crash twinsanity/co55if.jpg" width="150px" height="100px">
-<a href="../crash twinsanity/crash twinsanity.html"><br><button style="background-color:transparent; border-color:transparent; color:#ff7417; cursor:pointer;">crash twinsanity</button></a>
-<br><img src="../coco bandicoot/videojuego.png" width="150px" height="100px">
-<a href="shadowthehedgehog.html"><br><button style="background-color:transparent; border-color:transparent; color:#9f0a2f; cursor:pointer;">shadow the hedgehog</button></a>
-
+<body>
+<div class="menu">
+<img class="logo-juego" src="../coco bandicoot/juego.png">
+<div class="top-buttons">
+<img class="logo-pc" src="../coco bandicoot/ps2.png">
+<a href="../index.html" title="ir a la pagina anterior">
+<img class="btn-back" src="../coco bandicoot/pagina.png" alt="volver"></div></a>
+<div class="grid">
+<div class="item">
+<a href="../crash bandicoot 4/crashbandicoot4.html" class="game-btn">
+<img src="../crash bandicoot 4/images.png">
+<span>crash bandicoot 4</span></a></div>
+<div class="item">
+<a href="../crash nitro kart/crash nitro kart.html" class="game-btn">
+<img src="../crash nitro kart/crash nitro kart.jpg">
+<span>crash nitro kart</span></a></div>
+<div class="item">
+<a href="../crash tag team racing/crash tag team racing.html" class="game-btn">
+<img src="../crash tag team racing/download.jpg">
+<span>crash tag team racing</span></a></div>
+<div class="item">
+<a href="../crash twinsanity/crash twinsanity.html" class="game-btn">
+<img src="../crash twinsanity/co55if.jpg">
+<span>crash twinsanity</span></a></div>
+<a href="shadowthehedgehog.html" class="game-btn">
+<img src="../coco bandicoot/videojuego.png" class="game-btn">
+<span>shadow the hedgehog</span></a></div>
+</div>
 </body>
 </html>

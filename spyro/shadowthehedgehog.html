@@ -1,19 +1,133 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
+<style>
+body{
+background-image: url("../coco bandicoot/shadowthehedgehog.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center-top;
+margin: 0;
+text-align: center;
+color: white;
+}
+.titulo{
+font-family: Fixedsys;
+font-size: 70px;
+color: black;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000,
+0 0 6px #b00000,
+0 0 12px #ff0000;
+}
+.texto{
+font-family: Fixedsys;
+font-size: 50px;
+color: black;
+max-width: 900px;
+margin: auto;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000,
+0 0 6px #b00000,
+0 0 12px #ff0000;
+}
+.detalle{
+font-family: Fixedsys;
+font-size: 50px;
+color: black;
+margin: 5px 0;
+line-height: 1.1;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000,
+0 0 6px #b00000,
+0 0 12px #ff0000;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+.logo{
+width: 400px;
+}
+.portada{
+width: 300px;
+
+}
+.boton{
+width: 300px;
+max-width: 90vw;
+}
+.media{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+
+@media (max-width: 480px){
+.logo{
+width: 90vw;
+}
+.portada{
+width: 90vw;
+}
+.boton{
+width: 85vw;
+}
+.titulo{
+font-size: 2rem;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000,
+0 0 6px #b00000,
+0 0 12px #ff0000;
+}
+.texto, .detalle{
+flex-direction: column;
+font-size: 1.6rem;
+padding: 0 15px;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000,
+0 0 6px #b00000,
+0 0 12px #ff0000;
+}
+}
+</style>
+
 </head>
 
-<body background="../coco bandicoot/shadowthehedgehog.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;" text="white"bgcolor="black" text="white"bgcolor="black" text="white">
-
-<center><img src="../coco bandicoot/a.png" width="300px" height="300px" alt="logo de nuestra pagina web por equipo loquendo"></center>
-<center><h1><font face="Fixedsys" size=9 color="red">descargar shadow the hedgehog ps2 en español</h1></center>
-<font face="Fixedsys" size=9 color="dark">Shadow the Hedgehog es un videojuego de acción y plataformas protagonizado por este homónimo erizo azul de pelaje negro que, atormentado por su oscuro pasado y decidido a descubrir su verdadera identidad, se verá inmerso en una compleja batalla entre alienígenas, el ejército G.U.N. y el Dr. Eggman. Con este Shadow the Hedgehog, SEGA apuesta por un título donde las decisiones cuenta, pudiendo desbloquear diferentes finales, y en la que las armas y los vehículos ayudan a dar un toque singular para esta propuesta enmarcada dentro del universo de Sonic</font>
-<center><font face="Fixedsys" size=9 color="dark">publicidad:no</font></center>
-<center><font face="Fixedsys" size=9 color="dark">descarga: drive</font></center>
-<center><font face="Fixedsys" size=9 color="dark">idioma español</font></center>
-<center><a href="https://drive.google.com/file/d/1VQcBzCw6kvYjDXca7XTaI2KOIE0dobfW/view?usp=sharing"><br><input type="image" src="../coco bandicoot/play.png" style="border: none;" height="110" width="300"/></button></a></center>
+<body>
+<img src="../coco bandicoot/a.png" class="logo">
+<h1 class="titulo">descargar shadow the hedgehog ps2 en español</h1>
+<p class="texto">Shadow the Hedgehog es un videojuego de acción y plataformas protagonizado por este homónimo erizo azul de pelaje negro que, atormentado por su oscuro pasado y decidido a descubrir su verdadera identidad, se verá inmerso en una compleja batalla entre alienígenas, el ejército G.U.N. y el Dr. Eggman. Con este Shadow the Hedgehog, SEGA apuesta por un título donde las decisiones cuenta, pudiendo desbloquear diferentes finales, y en la que las armas y los vehículos ayudan a dar un toque singular para esta propuesta enmarcada dentro del universo de Sonic</p>
+<p class="detalle">publicidad: no</p>
+<p class="detalle">descarga: drive</p>
+<p class="detalle">idioma: subtitulos en español</p>
+<div class="media">
+<a href="https://drive.google.com/file/d/1VQcBzCw6kvYjDXca7XTaI2KOIE0dobfW/view?usp=sharing">
+<img src="../coco bandicoot/play.png" class="boton"></a>
+</div>
 </body>
 </html>
