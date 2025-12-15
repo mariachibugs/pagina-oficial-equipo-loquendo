@@ -1,22 +1,131 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
+<style>
+body{
+background-image: url("../hollow knight/a.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center-top;
+margin: 0;
+text-align: center;
+color: white;
+}
+.titulo{
+font-family: Hobo Std;
+font-size: 70px;
+color: white;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto{
+font-family: Hobo Std;
+font-size: 50px;
+color: white
+max-width: 900px;
+margin: auto;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.detalle{
+font-family: Hobo Std;
+font-size: 50px;
+color: white;
+margin: 5px 0;
+line-height: 1.1;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+.logo{
+width: 400px;
+}
+.portada{
+width: 300px;
+
+}
+.boton{
+width: 300px;
+max-width: 90vw;
+cursor: url('pluma-mouse.cur'), pointer !important;
+}
+.media{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+
+@media (max-width: 480px){
+.logo{
+width: 90vw;
+}
+.portada{
+width: 90vw;
+}
+.boton{
+width: 85vw;
+}
+.titulo{
+font-size: 2rem;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto, .detalle{
+flex-direction: column;
+font-size: 1.6rem;
+padding: 0 15px;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+}
+html * {
+cursor: url('Normal.cur'), auto !important;
+}
+</style>
 </head>
 
-<body background="../hollow knight/a.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;" text="white"bgcolor="black" text="white">
+<body>
 
-<center><img src="../hollow knight/hollow-knight.png" width="500px" height="300px" alt="logo de nuestra pagina web por equipo loquendo"></center>
-<center><h1><font face="Hobo Std" size=9 color="white">hollow knight</h1></center>
-<center><h1><font face="Hobo Std" size=9 color="white">Hollow Knight es una aventura de acción clásica en 2D ambientada en un vasto mundo interconectado. Explora cavernas tortuosas, ciudades antiguas y páramos mortales. Combate contra criaturas corrompidas, haz nuevas amistades con extraños insectos y resuelve los antiguos misterios que yacen en el corazón del reino.</h1></center>
-<center><h1><font face="Hobo Std" size=9 color="white">publicidad:no</h1></center>
-<center><h1><font face="Hobo Std" size=9 color="white">descarga:drive</h1></center>
-<center><h1><font face="Hobo Std" size=9 color="white">peso 1.47 gb</h1></center>
-<center><h1><font face="Hobo Std" size=9 color="white">descomprimir el archivo iso con daemon tools si no tienes el programa en nuestra pagina web lo encontraras</h1></center>
-<center><a href="https://drive.google.com/file/d/1iWflxH98eXZ_WV6qWWpVVbI_9Ye1mYwo/view?usp=sharing"><br><input type="image" src="../hollow knight/descargar.png" style="border: none;" height="150" width="300"/></button></a></center>
-<center><h1><font face="Hobo Std" size=9 color="white">REQUISITOS DEL SISTEMA
+<img src="../hollow knight/hollow-knight.png" class="logo">
+<h1 class="titulo">hollow knight</h1>
+<p class="texto">Hollow Knight es una aventura de acción clásica en 2D ambientada en un vasto mundo interconectado. Explora cavernas tortuosas, ciudades antiguas y páramos mortales. Combate contra criaturas corrompidas, haz nuevas amistades con extraños insectos y resuelve los antiguos misterios que yacen en el corazón del reino.</p>
+<p class="detalle">publicidad:no</p>
+<p class="detalle">descarga:drive</p>
+<p class="detalle">peso 1.47 gb</p>
+<p class="detalle">descomprimir el archivo iso con daemon tools si no tienes el programa en nuestra pagina web lo encontraras</p>
+<div class="media">
+<a href="https://drive.google.com/file/d/1iWflxH98eXZ_WV6qWWpVVbI_9Ye1mYwo/view?usp=sharing">
+<img src="../hollow knight/descargar.png" class="boton">
+</a>
+</div>
+<p class="detalle">REQUISITOS DEL SISTEMA
 MÍNIMOS:
 SO: Windows 7
 Procesador: Intel Core 2 Duo E5200
@@ -25,13 +134,16 @@ Gráficos: GeForce 9800GTX+ (1GB)
 DirectX: Versión 10
 Almacenamiento: 9 GB de espacio disponible
 Notas adicionales: 1080p, 16:9 recommended
-RECOMENDADOS:
+</p>
+<p class="detalle">
+REQUISITOS DEL SISTEMA RECOMENDADOS:
 SO: Windows 10
 Procesador: Intel Core i5
 Memoria: 8 GB de RAM
 Gráficos: GeForce GTX 560
 DirectX: Versión 11
 Almacenamiento: 9 GB de espacio disponible
-Notas adicionales: 1080p, 16:9 recommended</h1></center>
+Notas adicionales: 1080p, 16:9 recommended
+</p>
 </body>
 </html>
