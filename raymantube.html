@@ -1,0 +1,388 @@
+<html>
+<head>
+<meta name="description" content="esta es nuestra pagina creada pot html">
+<meta name="keywords" content="pagina, nuestra pagina, programas">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>equipo loquendo</title>
+<style>
+html, body{
+background: #212121 !important;
+
+}
+.coco{
+    margin-left: 50px;
+    display: grid;
+    margin-top: 10px;
+	width: 5vw;
+	margin-left: 50px;
+	height: 5vw;
+}
+.globox{
+margin-left: 50px;
+width: 20vw;
+margin-top: 10px;
+height: 5vw;
+margin: 1px !important;
+padding: 10px;
+background: linear-gradient(145deg, #00ccff, #0066ff) !important;
+display: block !important;
+color: !important;
+font-weight: bold !important;
+font-size: 1.4rem !important;
+border-radius: 20px !important;
+text-decoration: none !important;
+box-shadow: 
+0 12px 0 #0044aa,
+0 0 20px rgba(0, 170, 255, 0.8),
+inset 0 -8px 0 rgba(0,0,0,0.3),
+inset 0 8px 0 rgba(255,255,255,0.3) !important;
+transition: all 0.15s ease !important;
+position: relative;
+transform: translateY(0);
+}
+.raymantube{
+display: flex;
+}
+.rayman{
+width: 7vw;
+border-radius: 50%;
+margin-left: 20px;
+height: 5vw;
+
+}
+
+
+/* Contenedores de Videos */
+.ignitus, .chikorita, .niko {
+display: grid;
+grid-template-columns: repeat(3, minmax(320px, 1fr));
+gap: 50px;
+margin: 30px auto;
+padding: 10px;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+max-width: 1100px;
+justify-items: center;
+justify-content: center;
+}
+.video-item-link {
+position: relative;
+min-width: 0 !important;
+scroll-snap-align: center;
+display: flex;
+flex-direction: column;
+text-decoration: none;
+color: black;
+background: linear-gradient(145deg, #00F7FF 0%, #009CFF 25%, #0044FF 55%, #001B6F 80%, #000A1A 100%);
+border-radius: 16px;
+overflow: hidden;
+height: 100%;
+box-shadow: 0 6px 18px rgba(0,80,255,0.45), 
+0 12px 28px rgba(0,40,140,0.35),
+inset 0 0 15px rgba(0,180,255,0.25);
+
+width: 100% !important;
+}
+.video-item-link video{
+width: 100% !important;
+height: 200px !important;
+object-fit: fill !important;
+border-radius: 12px;
+display: block;
+background: #000;
+box-shadow: 0 4px 10px rgba(0,0,0,0,3);
+object-fit: cover;
+}
+
+.video-title:hover{
+color: #FFD772;
+text-shadow:
+0 0 2px #FFD772,
+0 0 5px #E2B44C,
+
+transition:  color 0.3s ease, text-shadow 0.3s ease;
+}
+.video-title{
+margin-top: 1px;
+font-size: 1.14rem;
+font-weight: bold;
+min-height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 1px 1px;
+color: #FFC93C;
+text-align: center;
+line-height: 1.4;
+text-decoration: none;
+width: 100%;
+transition:color 0.25s ease, text-shadow 0.25s ease;
+}
+.video-item-link:hover .video-title {
+color: #FFD700;
+}
+
+
+.raymantube{
+display: flex;
+align-items: center;
+padding: 20px;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+
+.raymantube a input[type="image"] {
+width: 80% !important;
+max-width: 300px;
+height: auto;
+margin: 10px auto;
+}
+
+
+
+@media screen and (max-width: 360px) {
+.ignitus, .chikorita, .niko {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+max-width: 100%;
+margin: 15 auto;
+gap: 18px;
+justify-content: center;
+padding: 10px;
+overflow-x: hidden !important;
+}
+.video-item-link{
+max-width: 170px;
+width: 100%;
+}
+.video-item-link video{
+height: 130px !important;
+object-fit: cover;
+}
+.video-title{
+font-size: 5vw;
+padding: 5px;
+min-height: auto;
+}
+.raymantube{
+flex-direction: column;
+gap: 15px;
+}
+.raymantube img,
+.raymantube a input[type="image"] {
+max-width: 60%;
+}
+}
+@media screen and (max-width: 359px) {
+.ignitus, .chikorita, .niko {
+display: grid;
+grid-template-columns: 1fr;
+margin: 10px;
+gap: 15px;
+}
+.video-item-link video{
+height: 150px !important;
+}
+.video-title{
+font-size: 5vw;
+}
+}
+</style>
+</head>
+<body>
+<div class="raymantube">
+<img class="coco" src="raymantube.png" >
+<img class="globox" src="canal.png">
+<img class="rayman" src="perfil-rayman.png">
+<a href="../index.html" title="ir a la pagina anterior"><input type="image" src="../coco bandicoot/index.png" style="border: none;" height="200" width="500"></a></div>
+<div class="ignitus">
+<a href="../tutorial alcohol/alcohol.html" class="video-item-link">  <video poster="../tutorial alcohol/d.png">
+<source src="../tutorial alcohol/alcohol.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR ALCOHOL 120%</p></a>
+
+<a href="../tutorial atube catcher/atube catcher.html" class="video-item-link"> <video poster="../tutorial atube catcher/e.png">
+<source src="../tutorial atube catcher/g.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR ATUBE CATCHER</p></a>
+
+<a href="../camtasia studio/camtasia.html" class="video-item-link"> <video poster="../camtasia studio/poster.png">
+<source src="../camtasia studio/b.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR CAMTASIA STUDIO</p></a>
+
+<a href="../tutorial cave story/cave story.html" class="video-item-link"> <video poster="../tutorial cave story/cave-story.jpg">
+<source src="../tutorial cave story/cave-story.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR CAVE STORY</p></a>
+
+<a href="../tutorial crash nitro kart/crash-bandicoot-juego.html" class="video-item-link"> <video poster="../tutorial crash nitro kart/crash-bandicoot.jpg">
+<source src="../tutorial crash nitro kart/ps2.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCAGAR CRASH NITRO KART</p></a>
+
+<a href="../tutorial crash bandicoot 4/crash-bandicoot.html" class="video-item-link"> <video poster="../tutorial crash bandicoot 4/crash-bandicoot-4.jpg">
+<source src="../tutorial crash bandicoot 4/crash-bandicoot-4.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR CRASH BANDICOOT 4 ESPAÑOL PS2</p></a>
+
+
+
+<a href="../tutorial crash tag team racing/crash-bandicoot-personaje.html" class="video-item-link"> <video poster="../tutorial crash tag team racing/crash-tag-team-racing.jpg">
+<source src="../tutorial crash tag team racing/k.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR CRASH TAG TEAM RACING ESPAÑOL PS2</p></a>
+
+
+
+<a href="../tutorial crash twinsanity/crash-twinsanity.html" class="video-item-link"> <video poster="../tutorial crash twinsanity/crash-twinsanity.jpg">
+<source src="../tutorial crash twinsanity/crash-twinsanity.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR CRASH TWINSANITY ESPAÑOL</p></a>
+
+<a href="../tutorial cuphead/cuphead.html" class="video-item-link"> <video poster="../tutorial cuphead/cuphead.png">
+<source src="../tutorial cuphead/cuphead.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR CUPHEAD DLC ESPAÑOL</p></a>
+
+
+<a href="../tutorial temu/temu.html" class="video-item-link"> <video poster="../tutorial temu/temu.png">
+<source src="../tutorial temu/tutorial-temu.mp4" type="video/mp4">
+</video>
+<p class="video-title"> GANAR DINERO EN TEMU</p></a>
+
+
+
+<a href="../tutorial gta/gta.html" class="video-item-link"> <video poster="../tutorial gta/gta.jpg">
+<source src="../tutorial gta/gta.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR GTA PC</p></a>
+
+
+
+
+
+
+<a href="../tutorial daemon tools/daemon-tools.html" class="video-item-link"> <video poster="../tutorial daemon tools/rayman-daemon-tools.png">
+<source src="../tutorial daemon tools/rayman-coco-hollow-knight.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR DAEMON TOOLS</p></a>
+
+
+<a href="../tutorial deltarune/deltarune.html" class="video-item-link"> <video poster="../tutorial deltarune/deltarune.png">
+<source src="../tutorial deltarune/deltarune.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR DELTARUNE CAP 1 Y 2 EN ESPAÑOL</p></a>
+
+
+
+
+<a href="../tutorial epxe/epxe.html" class="video-item-link"> <video poster="../tutorial epxe/b.png">
+<source src="../tutorial epxe/coco bandicoot.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR EMULADOR EPXE</p></a>
+
+
+
+
+
+
+
+<a href="../tutorial freemake/freemake video converter.html" class="video-item-link"> <video poster="../tutorial freemake/f.png">
+<source src="../tutorial freemake/freemake video converter.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR FREEMAKE FULL</p></a>
+
+
+<a href="../tutorial hollow knight/hollow-knight.html" class="video-item-link"> <video poster="../tutorial hollow knight/hollow-knight.jpg">
+<source src="../tutorial hollow knight/hollow-knight.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR HOLLOW KNIGHT ESPAÑOL PC</p></a>
+
+
+
+
+
+<a href="oneshot.html"class="video-item-link"> <video poster="oneshot.jpg">
+<source src="oneshot.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR ONESHOT ESPAÑOL PC</p></a>
+
+
+
+
+
+<a href="../pcsx2/pcsx2.html" class="video-item-link"> <video poster="../pcsx2/portada-ps2.png">
+<source src="../pcsx2/pcsx2.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR EMULADOR PS2 BIOS</p></a>
+
+
+<a href="power iso.html" class="video-item-link"> <video poster="power-iso.png">
+<source src="power iso.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR POWER ISO FULL</p></a>
+
+
+
+
+<a href="photoshop.html" class="video-item-link"> <video poster="photoshop.png">
+<source src="photoshop.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR PHOTOSHOP</p></a>
+
+
+
+
+<a href="../adobe photoshop cs6/adobe photoshop cs6 extendet.html" class="video-item-link"> <video poster="../adobe photoshop cs6/adobe-photoshop-cs6-extendet.png">
+<source src="../adobe photoshop cs6/adobe photoshop.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR ADOBE PHOTOSHOP CS6 FULL</p></a>
+
+
+
+
+<a href="shadow.html" class="video-item-link"> <video poster="shadow.jpg">
+<source src="shadow.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR SHADOW SUBTITULOS ESPAÑOL PS2</p></a>
+
+
+
+
+
+
+
+<a href="sony vegas.html" class="video-item-link"> <video poster="sony-vegas.png">
+<source src="l.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR SONY VEGAS PRO</p></a>
+
+
+<a href="ultra iso.html" class="video-item-link"> <video poster="ultra-iso.png">
+<source src="ultra iso.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR ULTRA ISO FULL</p></a>
+
+
+
+
+<a href="undertale.html" class="video-item-link"> <video poster="undertale.jpg">
+<source src="undertale.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR UNDERTALE ESPAÑOL</p></a>
+
+
+
+
+<a href="../tutorial vlc/vlc.html" class="video-item-link"> <video poster="../tutorial vlc/vlc.png">
+<source src="../tutorial vlc/m.mp4" type="video/mp4">
+</video>
+<p class="video-title"> DESCARGAR VLC</p></a>
+</div>
+</body>
+</html>

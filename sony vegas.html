@@ -24,11 +24,10 @@ width: 20vw;
 margin-top: 10px;
 height: 5vw;
 margin: 1px !important;
-cursor: url(undertale-cursor.png), pointer !important;
 padding: 10px;
 background: linear-gradient(145deg, #00ccff, #0066ff) !important;
 display: block !important;
-color: white !important;
+color: !important;
 font-weight: bold !important;
 font-size: 1.4rem !important;
 border-radius: 20px !important;
@@ -84,29 +83,10 @@ max-width: 300px;
 height: auto;
 margin: 10px auto;
 }
-.lee{
-justify-content: center;
-flex-wrap: wrap;
-padding: 20px 10px;
 
-}
-.shino{
-display: flex;
-margin-left: 150px;
-position: relative;
-overflow: hidden;
-width: 50%;
-margin-top: 10px;
-}
-.shino iframe{
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-width: 49%;
-height: 40%;
-}
-.kiba{
+
+
+.equipo{
 display: block !important;
 text-align: center !important;
 width: 100% !important;
@@ -117,14 +97,26 @@ margin-left: 20px;
 font-size: 1.5rem;
 word-break: break-word;
 }
-.akamaru{
+
+.dragones{
+justify-content: center;
+flex-wrap: wrap;
+padding: 20px 10px;
+
+}
+.tutorial{
+display: flex;
+justify-content: center;
+margin: 0 auto !important;
+}
+.descarga{
 margin-left: 50px;
 font-size: 2.0rem;
 width: calc(100% - 50px);
 margin-top: -30px;
 color: #FFFAFA;
 }
-.shikamaru{
+.aventura{
 display: inline-flex !important;
 justify-content: center;
 align-items: center;
@@ -134,7 +126,6 @@ width: 300px !important;
 margin-top: 5px !important;
 height: 50px;
 margin-bottom: 40px !important;
-cursor: url(undertale-cursor.png), pointer !important;
 background: linear-gradient(145deg, #00BBFF, #1E90FF) !important;
 color: #1a1a1a !important;
 font-weight: 900 !important;
@@ -154,7 +145,7 @@ position: relative;
 overflow: hidden;
 transform: translateY(0);
 }
-.shikamaru::before{
+.aventura::before{
 content:"";
 position: absolute;
 top: 0; left: -120%;
@@ -162,9 +153,9 @@ width: 60%; height: 100%;
 background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);
 transform: skewX(-20deg)
 }
-.shikamaru:hover::before{ 
+.aventura:hover::before{ 
 left:120%}
-.shikamaru:hover{
+.aventura:hover{
 background: linear-gradient(145deg, #74C0FC, #4EA8D) !important;
 transform: translateY(-2px) !important;
 box-shadow: 0 10px 0 #005577,
@@ -172,11 +163,17 @@ box-shadow: 0 10px 0 #005577,
 inset 0 4px 6px rgba(255,255,255,0.5),
 inset 0 -4px 6px rgba(0,0,0,0.2) !important;
 }
+
+
+
+
+
+
 @keyframes brillo{
 0% { transform: translateX(-100%); }
 100% { transform: translateX(100%); }
 }
-.shikamaru:active{
+.aventura:active{
 transform: translateY(4px) !important;
 box-shadow:
 0 4px 0 #005577,
@@ -184,7 +181,7 @@ box-shadow:
 inset 0 2px 4px rgba(255,255,255,0.2),
 inset 0 -2px 4px rgba(0,0,0,0.5) !important;
 }
-.shouji{
+.dragon{
 font-size: 2.0rem;
 margin-left: 50px;
 width: calc(100% - 50px);
@@ -192,14 +189,22 @@ margin-bottom: 0;
 margin-top: 10px;
 color: #FFFAFA;
 }
-.ino{
+.calambres{
+text-decoration: none;
+color: rgb(9, 67, 214);
+margin-left: 20px;
+
+
+}
+.bosque{
 margin-left: 50px;
 font-size: 2.0rem;
 width: calc(100% - 50px);
 margin-top: 10px;
 color: #FFFAFA;
 }
-.boruto{
+
+.personaje{
 display: inline-flex !important;
 justify-content: center;
 align-items: center;
@@ -209,7 +214,6 @@ width: 300px !important;
 margin-top: 5px !important;
 height: 50px;
 margin-bottom: 40px !important;
-cursor: url(undertale-cursor.png), pointer !important;
 background: linear-gradient(145deg, #00BBFF, #1E90FF) !important;
 color: #1a1a1a !important;
 font-weight: 900 !important;
@@ -229,7 +233,7 @@ position: relative;
 overflow: hidden;
 transform: translateY(0);
 }
-.boruto::before{
+.personaje::before{
 content:"";
 position: absolute;
 top: 0; left: -120%;
@@ -237,9 +241,9 @@ width: 60%; height: 100%;
 background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);
 transform: skewX(-20deg)
 }
-.boruto:hover::before{ 
+.personaje:hover::before{ 
 left:120%}
-.boruto:hover{
+.personaje:hover{
 background: linear-gradient(145deg, #74C0FC, #4EA8D) !important;
 transform: translateY(-2px) !important;
 box-shadow: 0 10px 0 #005577,
@@ -251,7 +255,7 @@ inset 0 -4px 6px rgba(0,0,0,0.2) !important;
 0% { transform: translateX(-100%); }
 100% { transform: translateX(100%); }
 }
-.boruto:active{
+.personaje:active{
 transform: translateY(4px) !important;
 box-shadow:
 0 4px 0 #005577,
@@ -264,9 +268,14 @@ display: block !important;
 margin: 0 auto !important;
 max-width: 100% !important;
 height: auto !important;
+object-fit: cover !important;
 }
+
+
+
+
 @media (max-width: 768px){
-.lee{
+.dragones{
 flex-direction: column;
 align-items: center;
 padding: 10px;
@@ -285,7 +294,6 @@ margin: 0;
 width: 35vw;
 height: auto;
 margin: 0;
-cursor: url(undertale-cursor.png), pointer !important;
 background: linear-gradient(145deg, #00ccff, #0066ff) !important;
 border-radius: 20px !important;
 box-shadow:
@@ -294,8 +302,7 @@ box-shadow:
 inset 0 -8px 0 rgba(0,0,0,0.3),
 inset 0 8px 0 rgba(255,255,255,0.3) !important;
 }
-.shikamaru{
-cursor: url(undertale-cursor.png), pointer !important;
+.aventura{
 background: linear-gradient(145deg, #00ccff, #0066ff) !important;
 border-radius: 20px !important;
 box-shadow:
@@ -312,8 +319,7 @@ align-items: left;
 text-align: center
 justify-content: center;
 }
-.boruto{
-cursor: url(niko-mouse.png), pointer !important;
+.personaje{
 background: linear-gradient(145deg, #00ccff, #0066ff) !important;
 border-radius: 20px !important;
 box-shadow:
@@ -335,7 +341,7 @@ width: 18vw;
 height: auto;
 margin: 0;
 }
-.shino{
+.tutorial{
 margin: 0 auto !important;
 display: block;
 width: 100%;
@@ -351,7 +357,7 @@ box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important;
 position: relative;
 
 }
-.kiba{
+.equipo{
 margin: 18px 0 0 0 !important;
 text-align: center;
 margin-left: 0;
@@ -364,15 +370,13 @@ margin-top: 1px !important;
 padding-top: 5px !important;
 padding-bottom: 15px !important;
 }
-.akamaru, .shino, .shouji{
+.descarga, .bosque, .dragon{
 margin-left: 10px;
 margin-right: 10px;
 text-align: center;
 font-size: 1.1rem;
 padding: 10px;
 }
-
-
 }
 .boton-youtube{
 display: inline-block !important;
@@ -385,14 +389,12 @@ border-radius: 40px !important;
 text-decoration: none !important;
 box-shadow: 0 2px 8px rgba(0,0,0,0.4) !important;
 transition: all 0.2s !important;
-cursor: url(undertale-cursor.png), pointer !important;
 margin-top: 10px;
 }
 .boton-youtube:hover{
 background-color: #FF3030 !important;
 box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
 }
-
 video,
 video * {
 cursor: auto !important;
@@ -400,7 +402,6 @@ image-rendering: crisp-edges;
 }
 body, *, *::before, *::after {
 box-sizing: border-box;
-cursor: url('undertale-mouse.png'), auto !important;
 }
 .play-button-universal{
 position: absolute;
@@ -429,27 +430,25 @@ margin-left: 6px;
 .play-button-universal.hidden {
 display: none;
 }
-
-
 </style>
 </head>
-<body background="rayman/coco bandicoot/color.png" bgcolor="white" text="black">
+<body>
 <div class="raymantube">
 <img class="coco" src="raymantube.png" >
 <a href="raymantube.html"><img class="globox" src="canal.png"></a>
-<img class="rayman" src="perfil-rayman.png"></a></div>
-<div class="lee">
-<div class="shino" style="position:relative; max-width: 520px; margin:auto;">
+<img class="rayman" src="perfil-rayman.png"></div>
+<div class="dragones">
+<div class="tutorial" style="position:relative; max-width: 490px; margin:auto;">
 <div class="play-button-universal" id="playUniversal"></div>
 <video id="video" playsinline preload="metadata" controls controlslist="nodownload noremoteplayback">
-<source src="undertale.mp4" type="video/mp4">
+<source src="l.mp4" type="video/mp4">
 </video></div>
-<p class="kiba"><a href="https://www.youtube.com/@canalbandicoot" target="_blank" class="boton-youtube">SUSCRIBIRSE</a></p></div>
-<h1 class="akamaru">enlace de descarga:</h1>
-<a class="shikamaru" href="https://drive.google.com/file/d/1wC4Zq5nbZIFSsSo4gzbhMP_VVwv0jBKG">google drive</a>
-<h1 class="ino">detalles del juego:</h1>
-<a class="boruto" href="../spyro/undertale.html">undertale</a>
-<h1 class="shouji">debido a los lineamientos de seguridad de youtube no podremos mostrar enlaces de juegos y programas completos en youtube pero aqui en raymantube encontraran todo tipo de juegos y programas completos </h1>
+<p class="equipo"><a href="https://www.youtube.com/@canalbandicoot" target="_blank" class="boton-youtube">SUSCRIBIRSE</a></p></div>
+<h1 class="descarga">enlace de descarga:</h1>
+<a class="aventura" href="https://drive.google.com/file/d/1uUlZDlXzhNp4YIMONLbncY86RaeIfWZE/view">google drive</a>
+<h1 class="bosque">detalles del programa:</h1>
+<a class="personaje" href="../sony vegas/sony vegas.html">sony vegas</a>
+<h1 class="dragon">debido a los lineamientos de seguridad de youtube no podremos mostrar enlaces de juegos y programas completos en youtube pero aqui en raymantube encontraran todo tipo de juegos y programas completos </h1>
 <script>
 const video = document.getElementById("video");
 const playBtnU = document.getElementById("playUniversal");
@@ -474,4 +473,3 @@ playBtnU.classList.add("hidden");
 </script>
 </body>
 </html>
-
