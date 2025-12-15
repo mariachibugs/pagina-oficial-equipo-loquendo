@@ -1,24 +1,89 @@
 <html>
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
 <style>
 .coco{
-    margin-left: 50px;
-    display: grid;
+    margin-left: 25px;
     margin-top: 10px;
-	width: 5vw;
-	margin-left: 50px;
 	height: 5vw;
 }
 .globox{
 margin-left: 50px;
-width: 20vw;
+padding: 10px;
+width: 22vw;
 margin-top: 10px;
-height: 5vw;
+height: auto;
+min-width: 240px;
+min-height: 50px;
+margin: 10px 50px 20px !important;
+padding: 0px;
+background: linear-gradient(145deg, #ff4d4d, #cc0000) !important;
+border: 4px solid #333 !important;
+border-top: 6px solid #ff8080 !important;
+border-left: 6px solid #ff5c5c !important;
+border-right: 6px solid #800000;
+border-bottom: 6px solid #600000;
+display: inline-flex !important;
+justify-content: center;
+align-items: center;
+font-weight: bold !important;
+font-size: 1.4rem !important;
+border-radius: 12px !important;
+text-decoration: none !important;
+box-shadow: 
+0 6px 0 #550000,
+0 0 40px rgba(255, 0, 0, 0.4),
+inset 0 10px 12px rgba(255,255,255,0.8),
+inset 0 -8px 15px rgba(0,0,0,0.9) !important;
+overflow: hidden;
+transition: all 0.15s ease !important;
+position: relative;
+transform: translateY(0);
+cursor: url(hollow-knight.cur), pointer !important;
 }
+.globox img{
+width: 100%;
+height: auto;
+display: block;
+border-radius: 10px;
+filter: drop-shadow(0 0 12px rgba(255,255,255,0.7));
+}
+.globox::before{
+content:"";
+position: absolute;
+top: 0;
+left: -140%;
+width: 80%;
+height: 100%;
+background: linear-gradient(90deg,
+transparent 0%, rgba(255,80,80,0.2) 40%,
+rgba(255,0,0,0.7) 50%,
+rgba(255,80,80,0.2) 60%, transparent 100%);
+transform: skewX(-25deg);
+transition: left 0.7s ease;
+}
+.globox:hover::before{ left: 150%; }
+.globox:hover{
+transform: translateY(-7px) !important;
+box-shadow: 
+0 20px 0 #000,
+0 0 60px rgba(255, 60, 60, 0.9);
+inset 0 12px 18px rgba(255,255,255,0.25),
+inset 0 -10px 15px rgba(0,0,0,0.9);
+}
+.globox:active{
+transform: translateY(8px) !important;
+box-shadow:
+0 6px 0 #000,
+0 0 25px rgba(255, 0, 0, 0.8),
+inset 0 4px 8px rgba(255,255,255,0.1),
+inset 0 -6px 8px rgba(0,0,0,0.1) !important;
+}
+
 .raymantube{
 display: flex;
 }
@@ -29,102 +94,662 @@ margin-left: 20px;
 height: 5vw;
 
 }
-.lillie{
+.raymantube{
 display: flex;
-
+align-items: center;
+padding: 20px;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
 }
-.mallow{
-display: flex;
-margin-left: 150px;
-position: relative;
-overflow: hidden;
-width: 50%;
-margin-top: 10px;
+.raymantube a input[type="image"] {
+width: 100% !important;
+max-width: 300px;
+height: auto;
+margin: 10px auto;
 }
-.mallow iframe{
-position: absolute;
-top: 0;
-left: 0;
-bottom: 0;
-width: 49%;
-height: 40%;
-}
-.suiren{
+.equipo{
+display: block !important;
+text-align: center !important;
+width: 100% !important;
+margin-top: 1px !important;
 text-decoration: none;
 color: rgb(9, 67, 214);
 margin-left: 20px;
 font-size: 1.5rem;
+word-break: break-word;
 }
-
+.dragones{
+justify-content: center;
+flex-wrap: wrap;
+padding: 20px 10px;
+}
+.tutorial{
+display: flex;
+justify-content: center;
+position: relative;
+}
 .bonnie{
-margin-left: 200px;
+margin-left: 50px;
+font-size: 2.0rem;
+width: calc(100% - 50px);
+margin-top: -30px;
+color: #FFFAFA;
 }
 .clemont{
-text-decoration: none;
-font-size: 1.2rem;
-margin-left: 200px;
-color: rgb(9, 67, 214);
+display: inline-flex !important;
+width: 340px !important;
+height: 68px !important;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 12px 0 15px 50px !important;
+cursor: url('pluma-mouse.cur'), pointer !important;
+background: #0b0d14 !important;
+color: #c4e1ff !important;
+text-shadow: 0 0 12px #5b9cff, 0 0 25px #3a7bff !important;
+border: 3px solid #1f2433 !important;
+border-top-color: #404a66 !important;
+border-left-color: #404a66 !important;
+font-weight: 900 !important;
+font-size: 1.18rem !important;
+font-family: "Determination Mono", 'Segoe Ui', monospace !important;
+text-transform: uppercase;
+letter-spacing: 3px;
+border-radius: 8px !important;
+text-decoration: none !important;
+box-shadow: 
+0 0 20px #000,
+0 20px 25px rgba(0, 0, 0, 0.9),
+0 20px 40px rgba(0, 0, 0, 0.6),
+inset 0 12px 20px rgba(80, 120, 220, 0.2),
+inset 0 -6px 10px rgba(0,0,0,0.7) !important;
+transition: all 0.25s cubic-bezier(0.2, 0.8, 0.4, 1) !important;
+position: relative;
+overflow: hidden;
+transform: translateY(-8px);
+z-index: 1;
+}
+.clemont::before{
+content:"";
+position: absolute;
+inset: 0;
+background: 
+radial-gradient(circle at 20% 120%, #000 6%, transparent 11%), 
+radial-gradient(circle at 80% -20%, #000 7%, transparent 12%),
+radial-gradient(circle at 50% 60%, #000 5%, transparent 10%),
+radial-gradient(circle at 35% 40%, #000 4%, transparent 9%);
+background-size: 100px 100px, 120px 120px, 80px 80px, 90px 90px;
+background-repeat: no-repeat;
+opacity: 0;
+animation: voidRise 6s ease-in-out infinite;
+z-index: 2;
+pointer-events: none;
+}
+.clemont:hover::before{ 
+opacity: 1;
+animation-duration: 2.8s;
+}
+.clemont:hover{
+border-top-color: #7ab3ff !important;
+border-left-color: #7ab3ff !important;
+transform: translateY(-16px) !important;
+box-shadow: 0 0 60px #408fff,
+0 28px 50px rgba(0 , 0, 0, 0.95),
+inset 0 14px 25px rgba(100, 150, 255, 0.35) !important;
+text-shadow: 0 0 20px #ffffff, 0 0 45px #6ca5ff !important;
+}
 
+.clemont:active{
+transform: translateY(6px) !important;
+box-shadow:
+0 6px 20px #3a7bff,
+0 6px 20px rgba(0, 0, 0, 0.9) !important;
+}
+
+.may{
+font-size: 2.0rem;
+margin-left: 50px;
+width: calc(100% - 50px);
+margin-bottom: 0;
+margin-top: 10px;
+color: #FFFAFA;
 }
 .brock{
-margin-left: 200px;
+margin-left: 50px;
+font-size: 2.0rem;
+width: calc(100% - 50px);
+margin-top: 10px;
+color: #FFFAFA;
+}
+.charizard{
+display: inline-flex !important;
+width: 340px !important;
+height: 68px !important;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 12px 0 40px 50px !important;
+cursor: url(pluma-mouse.cur), pointer !important;
+background: #0b0d14 !important;
+color: #c4e1ff !important;
+text-shadow: 0 0 12px #5b9cff, 0 0 25px #3a7bff !important;
+border: 3px solid #1f2433 !important;
+border-top-color: #404a66 !important;
+border-left-color: #404a66 !important;
+font-weight: 900 !important;
+font-size: 1.18rem !important;
+font-family: "Determination Mono", 'Segoe Ui', monospace !important;
+text-transform: uppercase;
+letter-spacing: 3px;
+border-radius: 8px !important;
+text-decoration: none !important;
+box-shadow: 
+0 0 20px #000,
+0 20px 25px rgba(0, 0, 0, 0.9),
+0 20px 40px rgba(0, 0, 0, 0.6),
+inset 0 12px 20px rgba(80, 120, 220, 0.2),
+inset 0 -6px 10px rgba(0,0,0,0.7) !important;
+transition: all 0.25s cubic-bezier(0.2, 0.8, 0.4, 1) !important;
+position: relative;
+overflow: hidden;
+transform: translateY(-8px);
+z-index: 1;
+}
+.charizard::before{
+content:"";
+position: absolute;
+inset: 0;
+background: 
+radial-gradient(circle at 20% 120%, #000 6%, transparent 11%), 
+radial-gradient(circle at 80% -20%, #000 7%, transparent 12%),
+radial-gradient(circle at 50% 60%, #000 5%, transparent 10%),
+radial-gradient(circle at 35% 40%, #000 4%, transparent 9%);
+background-size: 100px 100px, 120px 120px, 80px 80px, 90px 90px;
+background-repeat: no-repeat;
+opacity: 0;
+animation: voidRise 6s ease-in-out infinite;
+z-index: 2;
+pointer-events: none;
+}
+.charizard:hover::before{ 
+opacity: 1;
+animation-duration: 2.8s;
+}
+.charizard:hover{
+border-top-color: #7ab3ff !important;
+border-left-color: #7ab3ff !important;
+transform: translateY(-16px) !important;
+box-shadow: 0 0 60px #408fff,
+0 28px 50px rgba(0 , 0, 0, 0.95),
+inset 0 14px 25px rgba(100, 150, 255, 0.35) !important;
+text-shadow: 0 0 20px #ffffff, 0 0 45px #6ca5ff !important;
+}
+.charizard:active{
+transform: translateY(6px) !important;
+box-shadow:
+0 6px 20px #3a7bff,
+0 6px 20px rgba(0, 0, 0, 0.9) !important;
 }
 
 .misty{
-text-decoration: none;
-font-size: 1.2rem;
-margin-left: 200px;
-color: rgb(9, 67, 214);
-
+display: inline-flex !important;
+width: 340px !important;
+height: 68px !important;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 12px 0 40px 50px !important;
+cursor: url(pluma-mouse.cur), pointer !important;
+background: #0b0d14 !important;
+color: #c4e1ff !important;
+text-shadow: 0 0 12px #5b9cff, 0 0 25px #3a7bff !important;
+border: 3px solid #1f2433 !important;
+border-top-color: #404a66 !important;
+border-left-color: #404a66 !important;
+font-weight: 900 !important;
+font-size: 1.18rem !important;
+font-family: "Determination Mono", 'Segoe Ui', monospace !important;
+text-transform: uppercase;
+letter-spacing: 3px;
+border-radius: 8px !important;
+text-decoration: none !important;
+box-shadow: 
+0 0 20px #000,
+0 20px 25px rgba(0, 0, 0, 0.9),
+0 20px 40px rgba(0, 0, 0, 0.6),
+inset 0 12px 20px rgba(80, 120, 220, 0.2),
+inset 0 -6px 10px rgba(0,0,0,0.7) !important;
+transition: all 0.25s cubic-bezier(0.2, 0.8, 0.4, 1) !important;
+position: relative;
+overflow: hidden;
+transform: translateY(-8px);
+z-index: 1;
 }
-.may{
-font-zise: 1rem;
-margin-left: 10px;
-
+.misty::before{
+content:"";
+position: absolute;
+inset: 0;
+background: 
+radial-gradient(circle at 20% 120%, #000 6%, transparent 11%), 
+radial-gradient(circle at 80% -20%, #000 7%, transparent 12%),
+radial-gradient(circle at 50% 60%, #000 5%, transparent 10%),
+radial-gradient(circle at 35% 40%, #000 4%, transparent 9%);
+background-size: 100px 100px, 120px 120px, 80px 80px, 90px 90px;
+background-repeat: no-repeat;
+opacity: 0;
+animation: voidRise 6s ease-in-out infinite;
+z-index: 2;
+pointer-events: none;
 }
-.draisy{
-margin-left: 200px;
+.misty:hover::before{ 
+opacity: 1;
+animation-duration: 2.8s;
+}
+.misty:hover{
+border-top-color: #7ab3ff !important;
+border-left-color: #7ab3ff !important;
+transform: translateY(-16px) !important;
+box-shadow: 0 0 60px #408fff,
+0 28px 50px rgba(0 , 0, 0, 0.95),
+inset 0 14px 25px rgba(100, 150, 255, 0.35) !important;
+text-shadow: 0 0 20px #ffffff, 0 0 45px #6ca5ff !important;
+}
+@keyframes brillo{
+0% { transform: translateX(-100%); }
+100% { transform: translateX(100%); }
+}
+.misty:active{
+transform: translateY(6px) !important;
+box-shadow:
+0 6px 20px #3a7bff,
+0 6px 20px rgba(0, 0, 0, 0.9) !important;
 }
 .charmander{
-text-decoration: none;
-font-size: 1.2rem;
-margin-left: 200px;
-color: rgb(9, 67, 214);
-
+display: inline-flex !important;
+width: 340px !important;
+height: 68px !important;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 12px 0 40px 50px !important;
+cursor: url(pluma-mouse.cur), pointer !important;
+background: #0b0d14 !important;
+color: #c4e1ff !important;
+text-shadow: 0 0 12px #5b9cff, 0 0 25px #3a7bff !important;
+border: 3px solid #1f2433 !important;
+border-top-color: #404a66 !important;
+border-left-color: #404a66 !important;
+font-weight: 900 !important;
+font-size: 1.18rem !important;
+font-family: "Determination Mono", 'Segoe Ui', monospace !important;
+text-transform: uppercase;
+letter-spacing: 3px;
+border-radius: 8px !important;
+text-decoration: none !important;
+box-shadow: 
+0 0 20px #000,
+0 20px 25px rgba(0, 0, 0, 0.9),
+0 20px 40px rgba(0, 0, 0, 0.6),
+inset 0 12px 20px rgba(80, 120, 220, 0.2),
+inset 0 -6px 10px rgba(0,0,0,0.7) !important;
+transition: all 0.25s cubic-bezier(0.2, 0.8, 0.4, 1) !important;
+position: relative;
+overflow: hidden;
+transform: translateY(-8px);
+z-index: 1;
 }
+.charmander::before{
+content:"";
+position: absolute;
+inset: 0;
+background: 
+radial-gradient(circle at 20% 120%, #000 6%, transparent 11%), 
+radial-gradient(circle at 80% -20%, #000 7%, transparent 12%),
+radial-gradient(circle at 50% 60%, #000 5%, transparent 10%),
+radial-gradient(circle at 35% 40%, #000 4%, transparent 9%);
+background-size: 100px 100px, 120px 120px, 80px 80px, 90px 90px;
+background-repeat: no-repeat;
+opacity: 0;
+animation: voidRise 6s ease-in-out infinite;
+z-index: 2;
+pointer-events: none;
+}
+.charmander:hover::before{ 
+opacity: 1;
+animation-duration: 2.8s;
+}
+.charmander:hover{
+border-top-color: #7ab3ff !important;
+border-left-color: #7ab3ff !important;
+transform: translateY(-16px) !important;
+box-shadow: 0 0 60px #408fff,
+0 28px 50px rgba(0 , 0, 0, 0.95),
+inset 0 14px 25px rgba(100, 150, 255, 0.35) !important;
+text-shadow: 0 0 20px #ffffff, 0 0 45px #6ca5ff !important;
+}
+.charmander:active{
+transform: translateY(6px) !important;
+box-shadow:
+0 6px 20px #3a7bff,
+0 6px 20px rgba(0, 0, 0, 0.9) !important;
+}
+
 .bolbasaur{
-margin-left: 200px;
+margin-left: 50px;
+font-size: 2.0rem;
+width: calc(100% - 50px);
+margin-top: -30px;
+color: #FFFAFA;
+}
+.draisy{
+margin-left: 50px;
+font-size: 2.0rem;
+width: calc(100% - 50px);
+margin-top: -30px;
+color: #FFFAFA;
+}
+video{
+display: block !important;
+margin: 0 auto !important;
+max-width: 100% !important;
+height: auto !important;
+}
+@media (max-width: 768px){
+.dragones{
+flex-direction: column;
+align-items: center;
+padding: 10px;
+}
+.raymantube{
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+.coco{
+width: 22vw;
+height: auto;
+margin: 0;
+}
+.globox{
+width: 40vw;
+height: 12vw;
+}
+.clemont{
+border-radius: 20px !important;
+box-shadow:
+0 12px 0 #0044aa,
+0 0 20px rgba(0,170,255,0.8),
+inset 0 -8px 0 rgba(0,0,0,0.3),
+inset 0 8px 0 rgba(255,255,255,0.3) !important;
+width: 78% !important;
+display: flex !important;
+margin-left: auto !important;
+margin-right: auto !important;
+height: 48px !important;
+font-size: 0.9rem !important;
+align-items: left;
+text-align: center;
+justify-content: center;
+}
+.misty{
+border-radius: 20px !important;
+box-shadow:
+0 12px 0 #0044aa,
+0 0 20px rgba(0,170,255,0.8),
+inset 0 -8px 0 rgba(0,0,0,0.3),
+inset 0 8px 0 rgba(255,255,255,0.3) !important;
+width: 78% !important;
+display: flex !important;
+margin-left: auto !important;
+margin-right: auto !important;
+height: 48px !important;
+font-size: 0.9rem !important;
+align-items: left;
+text-align: center;
+justify-content: center;
+}
+.charmander{
+border-radius: 20px !important;
+box-shadow:
+0 12px 0 #0044aa,
+0 0 20px rgba(0,170,255,0.8),
+inset 0 -8px 0 rgba(0,0,0,0.3),
+inset 0 8px 0 rgba(255,255,255,0.3) !important;
+width: 78% !important;
+display: flex !important;
+margin-left: auto !important;
+margin-right: auto !important;
+height: 48px !important;
+font-size: 0.9rem !important;
+align-items: left;
+text-align: center;
+justify-content: center;
 }
 .charizard{
-text-decoration: none;
-font-size: 1.2rem;
-margin-left: 200px;
-color: rgb(9, 67, 214);
+border-radius: 20px !important;
+box-shadow:
+0 12px 0 #0044aa,
+0 0 20px rgba(0,170,255,0.8),
+inset 0 -8px 0 rgba(0,0,0,0.3),
+inset 0 8px 0 rgba(255,255,255,0.3) !important;
+width: 78% !important;
+display: flex !important;
+margin-left: auto !important;
+margin-right: auto !important;
+height: 48px !important;
+font-size: 0.9rem !important;
+align-items: left;
+text-align: center;
+justify-content: center;
+}
+.rayman{
+width: 18vw;
+height: auto;
+margin: 0;
+}
+.tutorial{
+margin: 0 auto !important;
+display: block;
+width: 100%;
+max-width: 100%;
+order: 1;
+margin-left: 0;
+margin-right: 0;
+margin: 20px auto !important;
+cursor: pointer;
+border-radius: 16px !important;
+overflow: hidden !important;
+box-shadow: 0 10px 40px rgba(0,0,0,0.6) !important;
+position: relative;
 
+}
+.equipo{
+margin: 18px 0 0 0 !important;
+text-align: center;
+margin-left: 0;
+margin-right: 0;
+padding: 0 !important;
+border-top: none;
+order: 2;
+width: 100%;
+margin-top: 1px !important;
+padding-top: 5px !important;
+padding-bottom: 15px !important;
+}
+.may, .brock, .draisy, .may, .bonnie, .bolbasaur{
+margin-left: 10px;
+margin-right: 10px;
+text-align: center;
+font-size: 1.1rem;
+padding: 10px;
+}
+}
+.boton-youtube{
+display: inline-block !important;
+background: linear-gradient(145deg, #aa0000, #880000) !important;
+border-top: 4px solid #ff3333 !important;
+color: white !important;
+font-weight: bold !important;
+font-size: 1.4rem !important;
+padding: 12px 40px !important;
+border-radius: 40px !important;
+text-decoration: none !important;
+box-shadow: 0 8px #440000, 0 0 20px rgba(255,255,255,0.6) !important;
+transition: all 0.2s !important;
+cursor: url(hollow-knight.cur), pointer !important;
+margin-top: 10px;
+}
+.boton-youtube:hover{
+background: linear-gradient(145deg, #cc0000, #880000) !important;
+transform: translateY(-4px);
+box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+.boton-youtube:active{
+transform: translateY(6px) !important;
+box-shadow: 0 4px 0 #440000 !important;
+}
+
+
+video,
+video * {
+cursor: auto !important;
+image-rendering: crisp-edges;
+}
+html * {
+cursor: url('Normal.cur'), auto !important;
+}
+.play-button-universal{
+position: absolute;
+left: 50%;
+top: 50%;
+width: 95px;
+height: 95px;
+background: black;
+border-radius: 50%;
+transform: translate(-50% , -50%);
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 20;
+cursor: pointer;
+}
+.play-button-universal::before {
+content:"";
+width: 0;
+height: 0;
+border-left: 38px solid white;
+border-top: 24px solid transparent;
+border-bottom: 24px solid transparent;
+margin-left: 6px;
+}
+.play-button-universal.hidden {
+display: none;
+}
+
+
+
+#video-fondo{
+position: fixed;
+width: auto;
+height: auto;
+min-width: 100vw;
+min-height: 100vh;
+top: 50%;
+left: 50%;
+pointer-events: none;
+transform: translate(-50%, -50%);
+z-index: -999;
+object-fit: cover;
+background: #000 !important;
+}
+#video-fondo::after{
+content: "";
+position: fixed;
+inset: 0;
+background: rgba(0 ,0, 0, 0.55);
+z-index: -998;
+pointer-events: none;
 }
 </style>
 </head>
-<body background="rayman/coco bandicoot/color.png" bgcolor="white" text="black">
+<body>
 <div class="raymantube">
 <img class="coco" src="../raymantube/raymantube.png" >
 <a href="../raymantube/raymantube.html"><img class="globox" src="../raymantube/canal.png"></a>
-<img class="rayman" src="../raymantube/perfil-rayman.png"></a></div>
-<div class="lillie">
-<br>
-<video class="mallow" controls>
+<img class="rayman" src="../raymantube/perfil-rayman.png"></div>
+<div class="dragones">
+<div class="tutorial" style="position:relative; max-width: 580px; margin:auto;">
+<div class="play-button-universal" id="playUniversal"></div>
+<video id="video" playsinline preload="metadata" controls controlslist="nodownload noremoteplayback">
 <source src="hollow-knight.mp4" type="video/mp4">
-</video><a class="suiren" href="https://www.youtube.com/@equipoloquendooficial-y2z">suscribete al canal de youtube enlace: https://www.youtube.com/@equipoloquendorayman</div></a>
+</video></div>
+<p class="equipo"><a href="https://www.youtube.com/@canalbandicoot" target="_blank" class="boton-youtube">SUSCRIBIRSE</a></p></div>
 <h1 class="bonnie">enlace de descarga:</h1>
-<a class="clemont" href="https://drive.google.com/file/d/1iWflxH98eXZ_WV6qWWpVVbI_9Ye1mYwo">https://drive.google.com/file/d/1iWflxH98eXZ_WV6qWWpVVbI_9Ye1mYwo</a>
+<a class="clemont" href="https://drive.google.com/file/d/1iWflxH98eXZ_WV6qWWpVVbI_9Ye1mYwo">google drive</a>
 <h1 class="brock">detalles del juego:</h1>
-<a class="misty" href="../hollow knight/hollow knight.html">https://equipoloquendo.neocities.org/rayman/hollow%20knight/hollow%20knight</a>
+<a class="misty" href="../hollow knight/hollow knight.html">hollow knight</a>
 <h1 class="draisy">enlace del video de daemon tools</h1>
-<a class="charmander" href="daemon-tools.html">https://equipoloquendo.neocities.org/rayman/daemontools/daemontoolsfull</a>
+<a class="charmander" href="../tutorial daemon tools/daemon-tools.html">daemon tools</a>
 <h1 class="bolbasaur">enlace de descarga daemon tools lite:</h1>
-<a class="charizard" href="https://drive.google.com/file/d/1oi0Etq1MjdGB03uY1zIfnZ6Jt7xCovph">https://drive.google.com/file/d/1oi0Etq1MjdGB03uY1zIfnZ6Jt7xCovph</a>
-
-<h1 class="may">debido a los lineamientos de seguridad de youtube no podremos mostrar enlaces de juegos y programas completos en youtube pero aqui en raymantube encontraran todo tipo de juegos y programas completos </h1>
-<div>
+<a class="charizard" href="https://drive.google.com/file/d/1oi0Etq1MjdGB03uY1zIfnZ6Jt7xCovph">google drive</a>
+<h1 class="may">debido a los lineamientos de la comunidad de youtube no podremos mostrar enlaces de juegos y programas completos en youtube pero aqui en raymantube encontraran todo tipo de juegos y programas completos </h1>
+<audio id="hoverSound" preload="auto">
+<source src="hollow-knight.mp3" type="audio/mpeg">
+</audio>
+<video id="video-fondo" autoplay muted loop playsinline>
+<source src="hollow-knight-fondo.mp4" type="video/mp4">
+</video>
+<script>
+const video = document.getElementById("video");
+const playBtnU = document.getElementById("playUniversal");
+video.addEventListener("play", () => {
+playBtnU.classList.add("hidden");
+});
+video.addEventListener("click", (e) => {
+if (!video.paused) {
+video.pause();
+playBtnU.classList.remove("hidden");
+e.stopPropagation();
+e.preventDefault();
+}
+});
+video.addEventListener("touchstart", (e) => {
+video.setAttribute("controls", "true");
+}, { passive: true });
+playBtnU.addEventListener("click", () => {
+video.play();
+playBtnU.classList.add("hidden");
+});
+const sonido = document.getElementById('hoverSound');
+let audioDesbloqueado = false;
+function desbloquearAudio() {
+if (audioDesbloqueado) return;
+sonido.play().then(() => {
+sonido.pause();
+sonido.currentTime = 0;
+audioDesbloqueado = true;
+console.log("Audio desbloqueado correctamente");
+}).catch(() => {});
+};
+function reproducirSonido() {
+if (!audioDesbloqueado) return;
+sonido.currentTime = 0;
+sonido.play();
+}
+const intentarDesbloquear = () => desbloquearAudio ();
+document.querySelectorAll('.clemont, .misty, .charmander, .charizard').forEach(boton => {
+boton.addEventListener('mouseenter', reproducirSonido);
+boton.addEventListener('touchstart', () => {
+desbloquearAudio();
+reproducirSonido();
+}, { passive: true });
+});
+document.addEventListener('mousemove', intentarDesbloquear, { once: true });
+document.addEventListener('keydown', intentarDesbloquear, { once: true });
+document.addEventListener('click', intentarDesbloquear, { once: true });
+document.addEventListener('touchstart', intentarDesbloquear, { once: true });
+</script>
 </body>
 </html>
 
