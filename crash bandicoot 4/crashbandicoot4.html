@@ -1,19 +1,133 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
+<style>
+body{
+background-image: url("../crash bandicoot 4/crash bandicoot 4.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center-top;
+margin: 0;
+text-align: center;
+color: white;
+}
+.titulo{
+font-family: Nueva Std;
+font-size: 70px;
+color: orange;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto{
+font-family: Nueva Std;
+font-size: 50px;
+color: orange;
+max-width: 900px;
+margin: auto;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.detalle{
+font-family: Nueva Std;
+font-size: 50px;
+color: orange;
+margin: 5px 0;
+line-height: 1.1;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+.logo{
+width: 200px;
+}
+.imagen{ 
+width: 550px;
+}
+.portada{
+width: 300px;
+
+}
+.boton{
+width: 300px;
+max-width: 90vw;
+cursor: url(cuphead-cursor.png), pointer !important;
+padding-top: 10px;
+}
+.media{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+
+@media (max-width: 480px){
+.logo{
+width: 50vw;
+}
+.imagen{
+width: 80vw;
+}
+.boton{
+width: 85vw;
+cursor: url(niko-mouse.png), pointer !important;
+}
+.titulo{
+font-size: 2rem;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto, .detalle{
+flex-direction: column;
+font-size: 1.6rem;
+padding: 0 15px;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+}
+html * {
+cursor: url('cuphead-mouse.png'), auto !important;
+}
+</style>
 </head>
 
-<body background="../crash bandicoot 4/crash bandicoot 4.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;" text="white"bgcolor="black" text="white"bgcolor="black" text="white"></center>
+<body>
 
-<center><img src="../crash bandicoot 4/logo crash bandicoot.png" width="500px" height="300px" alt="logo de nuestra pagina web por equipo loquendo">
-<center><h1><font face="Nueva Std" size=9 color="orange">crash bandicoot 4 español ps2</h1></center>
-<font face="Nueva Std" size=9 color="orange">Crash Bandicoot: La venganza de Cortex es un juego de plataformas en el que el jugador controla a Crash Bandicoot y Coco, cuyo objetivo es reunir 25 cristales y derrotar a los principales antagonistas de la historia: Doctor Neo Cortex, su nueva super arma Crunch Bandicoot y las fuentes de energía de Crunch, Los Elementales. Gran parte del juego tiene lugar en una "Realidad Virtual (RV) Hub Sistema", creado por Coco para ayudar a recoger los cristales a Crash.</font>
-<center><h1><font face="Nueva Std" size=9 color="orange">idioma:español</h1></center>
-<center><h1><font face="Nueva Std" size=9 color="orange">descarga:drive</h1></center>
-<center><h1><font face="Nueva Std" size=9 color="orange">publicidad:no</h1></center>
-<center><a href="https://drive.google.com/file/d/1Iv2jmZ5DDN8iEWH60lto3tluC5ScCiyR/view?usp=sharing"><br><input type="image" src="../crash bandicoot 4/crash-bandicoot.png" style="border: none;" height="100" width="300"/></button></a></center>
+<img src="../crash bandicoot 4/logo crash bandicoot.png" class="logo">
+<h1 class="titulo">crash bandicoot 4 español ps2</h1>
+<p class="texto">Crash Bandicoot: La venganza de Cortex es un juego de plataformas en el que el jugador controla a Crash Bandicoot y Coco, cuyo objetivo es reunir 25 cristales y derrotar a los principales antagonistas de la historia: Doctor Neo Cortex, su nueva super arma Crunch Bandicoot y las fuentes de energía de Crunch, Los Elementales. Gran parte del juego tiene lugar en una "Realidad Virtual (RV) Hub Sistema", creado por Coco para ayudar a recoger los cristales a Crash.</p>
+<p class="detalle">idioma: español</p>
+<p class="detalle">descarga: drive</p>
+<p class="detalle">publicidad: no</p>
+<div class="media">
+<a href="https://drive.google.com/file/d/1Iv2jmZ5DDN8iEWH60lto3tluC5ScCiyR/view?usp=sharing">
+<img src="../crash bandicoot 4/crash-bandicoot.png" class="boton">
+</a>
+</div>
 </body>
 </html>

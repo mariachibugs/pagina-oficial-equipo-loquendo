@@ -1,18 +1,132 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
+<style>
+body{
+background-image: url("../crash twinsanity/crash twinsanity.png");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center-top;
+margin: 0;
+text-align: center;
+color: white;
+}
+.titulo{
+font-family: Hobo Std;
+font-size: 70px;
+color: #ff7417;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto{
+font-family: Hobo Std;
+font-size: 50px;
+color: #ff7417;
+max-width: 900px;
+margin: auto;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.detalle{
+font-family: Hobo Std;
+font-size: 50px;
+color: #ff7417;
+margin: 5px 0;
+line-height: 1.1;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+.logo{
+width: 400px;
+}
+.portada{
+width: 300px;
+
+}
+.boton{
+width: 300px;
+max-width: 90vw;
+}
+.media{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+
+@media (max-width: 480px){
+.logo{
+width: 90vw;
+}
+.portada{
+width: 90vw;
+}
+.boton{
+width: 85vw;
+cursor: url(niko-mouse.png), pointer !important;
+}
+.titulo{
+font-size: 2rem;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px 0 0 #3a2a00,
+1px 0 0 #3a2a00,
+0 -1px 0 #3a2a00,
+0 1px 0 #3a2a00,
+0 0 4px #fff2a8,
+0 0 8px #ffd84d,
+0 0 14px #ffcc33,
+0 0 22px rgba(255, 200, 50, 0.7);
+}
+.texto, .detalle{
+flex-direction: column;
+font-size: 1.6rem;
+padding: 0 15px;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px 0 0 #3a2a00,
+1px 0 0 #3a2a00,
+0 -1px 0 #3a2a00,
+0 1px 0 #3a2a00,
+0 0 4px #fff2a8,
+0 0 8px #ffd84d,
+0 0 14px #ffcc33,
+0 0 22px rgba(255, 200, 50, 0.7);
+}
+}
+</style>
 </head>
 
-<body background="../crash twinsanity/crash twinsanity.png" style="background-repeat: no-repeat; background-size: 100% 100%;" text="white"bgcolor="black" text="white"bgcolor="black" text="white">
-<center><img src="../crash twinsanity/images.png" width="500px" height="300px" alt="logo de nuestra pagina web por equipo loquendo">
-<center><font face="Hobo Std" size=9 color="#ff7417">descargar crashtwinsanity ps2 español</font></center>
-<center><font face="Hobo Std" size=9 color="#ff7417">Un nuevo adversarioThe Evil Twinshas invadió el paraíso de la isla de Crashs con planes de destrucción. En un giro extraño, Crash se une a regañadientes con su archienemigo, el Dr. Cortex para salvar el mundo.</font></center>
-<center><font face="Hobo Std" size=9 color="#ff7417">idioma:español</font></center>
-<center><font face="Hobo Std" size=9 color="#ff7417">publicidad:no</font></center>
-<center><font face="Hobo Std" size=9 color="#ff7417">descarga:drive</font></center>
-<center><a href="https://drive.google.com/file/d/1fIQHrBlANMZ9zxY3JxUO88AAbHmR4B0V/view?usp=sharing"><br><input type="image" src="../crash twinsanity/boton-crash-twinsanity.png" style="border: none;" height="150" width="300"/></button></a></center>
+<body>
+<img src="../crash twinsanity/images.png">
+<h1 class="titulo">descargar crashtwinsanity ps2 español</h1>
+<p class="texto">Un nuevo adversarioThe Evil Twinshas invadió el paraíso de la isla de Crashs con planes de destrucción. En un giro extraño, Crash se une a regañadientes con su archienemigo, el Dr. Cortex para salvar el mundo.</h1>
+<p class="detalle">idioma:español</p>
+<p class="detalle">publicidad:no</p>
+<p class="detalle">descarga:drive</p>
+<div class="media">
+<a href="https://drive.google.com/file/d/1fIQHrBlANMZ9zxY3JxUO88AAbHmR4B0V/view?usp=sharing">
+<img src="../crash twinsanity/boton-crash-twinsanity.png" class="boton"button>
+</a>
+</div>
 </body>
 </html>
