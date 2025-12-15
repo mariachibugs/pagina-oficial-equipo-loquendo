@@ -1,26 +1,180 @@
 <html>
 <head>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="esta es nuestra pagina creada pot html">
 <meta name="keywords" content="pagina, nuestra pagina, programas">
-
 <title>equipo loquendo</title>
+<style>
+body{
+background-image: url("../cave story/inicio.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+background-position: center-top;
+margin: 0;
+text-align: center;
+color: white;
+}
+.titulo{
+font-family: Fixedsys;
+font-size: 70px;
+color: white;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto{
+font-family: Fixedsys;
+font-size: 50px;
+color: white;
+max-width: 900px;
+margin: auto;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.detalle{
+font-family: Fixedsys;
+font-size: 50px;
+color: white;
+margin: 5px 0;
+line-height: 1.1;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+img{
+max-width: 100%;
+height: auto;
+}
+.logo{
+width: 200px;
+}
+.imagen{ 
+width: 550px;
+}
+.portada{
+width: 300px;
+
+}
+.boton{
+width: 300px;
+max-width: 90vw;
+cursor: none;
+padding-top: 10px;
+}
+.media{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+margin-bottom: 30px;
+}
+
+@media (max-width: 480px){
+.logo{
+width: 50vw;
+}
+.imagen{
+width: 80vw;
+}
+.boton{
+width: 85vw;
+cursor: url(niko-mouse.png), pointer !important;
+}
+.titulo{
+font-size: 2rem;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+.texto, .detalle{
+flex-direction: column;
+font-size: 1.6rem;
+padding: 0 15px;
+margin: 6px 0;
+line-height: 1.2;
+text-shadow:
+-1px -1px 0 #000,
+1px -1px 0 #000,
+-1px 1px 0 #000,
+1px 1px 0 #000;
+}
+}
+body {
+cursor: none;
+}
+#cursor{
+position: fixed;
+width: 50px;
+height: 50px;
+pointer-events: none;
+z-index: 9999;
+transform: translate(-20px, -25px);
+background-image: url("spritesheet.png");
+image-rendering: pixelated;
+background-repeat: no-repeat;
+image-rendering: crisp-edges;
+left: 0;
+top: 0;
+border: none !important;
+outline: none !important;
+box-shadow: none !important;
+}
+img#cursor:active{
+outline: none !important;
+box-shadow: none !important;
+}
+</style>
 </head>
+<body>
 
-<body background="../cave story/inicio.jpg" style="background-repeat: no-repeat; background-size: 100% 100%;" text="white"bgcolor="black" text="white">
-
-<center><img src="../cave story/Cave-Story.png" width="200px" height="300px" alt="logo de nuestra pagina web por equipo loquendo"></center>
-<center><h1><font face="Fixedsys" size=9 color="white">cave story</h1></center>
-<center><h1><font face="Fixedsys" size=9 color="white">Podría decirse que es el juego indie más conocido de todos los tiempos. Cave Story nos ofrece una historia totalmente original con personalidad propia, misterio y horas de diversión a todo tren. Cave Story es un juego de acción y aventuras del diseñador independiente aclamado por la crítica Daisuke Amaya, o Pixel para sus fans. Con una personalidad y un encanto arrolladores, Cave Story te transporta a un extraño mundo en el que una curiosa raza de inocentes criaturas conejiles, llamadas Mimigas, campan en libertad.
+<img src="../cave story/Cave-Story.png" class="logo">
+<h1 class="titulo">cave story</h1>
+<p class="texto">Podría decirse que es el juego indie más conocido de todos los tiempos. Cave Story nos ofrece una historia totalmente original con personalidad propia, misterio y horas de diversión a todo tren. Cave Story es un juego de acción y aventuras del diseñador independiente aclamado por la crítica Daisuke Amaya, o Pixel para sus fans. Con una personalidad y un encanto arrolladores, Cave Story te transporta a un extraño mundo en el que una curiosa raza de inocentes criaturas conejiles, llamadas Mimigas, campan en libertad.
 Te despiertas en una oscura cueva sin recordar quién eres, de donde vienes o por qué estás en este lugar. Al descubrir el Poblado Mimiga compruebas que los anteriormente despreocupados Mimigas se encuentran en peligro a manos de un científico maníaco. La única esperanza de los Mimigas descansa sobre los hombros de un silencioso chico amnésico que no recuerda ni su propio nombre.
-Corre, salta, dispara, vuela y explora a lo largo de una aventura de acción con el sabor de los clásicos de 8 y 16 bits. ¡Toma el control y descubre el origen del poder de este mundo, detén al iluso villano y salva a los Mimiga!</h1></center>
-<center><h1><font face="Fixedsys" size=9 color="white">el menu del juego va a estar en ingles pero lo demas esta en español</h1></center>
-<center><h1><font face="Fixedsys" size=9 color="white">cambiar a modo original</h1></center>
-<center><img src="../cave story/imagen.jpg" width="500px" height="300px" alt="logo de nuestra pagina web por equipo loquendo"></center>
-<center><h1><font face="Fixedsys" size=9 color="white">pubicidad:no</h1></center>
-<center><h1><font face="Fixedsys" size=9 color="white">descarga:drive</h1></center>
-<center><h1><font face="Fixedsys" size=9 color="white">peso:144mb</h1></center>
-<center><a href="https://drive.google.com/file/d/1DdGyS93rwudGg7u533VaZ0XCDKMe4hJV/view?usp=sharing"><br><input type="image" src="../cave story/rojo.png" style="border: none;" height="150" width="250"/></button></a></center>
-
-
+Corre, salta, dispara, vuela y explora a lo largo de una aventura de acción con el sabor de los clásicos de 8 y 16 bits. ¡Toma el control y descubre el origen del poder de este mundo, detén al iluso villano y salva a los Mimiga!</h1>
+<p class="detalle">el menu del juego va a estar en ingles pero lo demas esta en español</p>
+<p class="detalle">cambiar a modo original</p>
+<img src="../cave story/imagen.jpg" class="logo">
+<p class="detalle">pubicidad:no</p>
+<p class="detalle">descarga:drive</p>
+<p class="detalle">peso:144mb</p>
+<div class="media">
+<a href="https://drive.google.com/file/d/1DdGyS93rwudGg7u533VaZ0XCDKMe4hJV/view?usp=sharing">
+<img src="../cave story/rojo.png" class="boton">
+</a>
+</div>
+<div id="cursor"></div>
+<script>
+const cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', (e) => {
+cursor.style.left = e.clientX + 'px';
+cursor.style.top = e.clientY + 'px';
+});
+let frame = 0;
+const totalFrames = 26;
+const frameWidth = 50;
+const frameHeight = 50;
+const columns = 5;
+setInterval(() => {
+const col = frame % columns;
+const row = Math.floor(frame / columns);
+cursor.style.backgroundPosition =
+`-${col * frameWidth}px -${row * frameHeight}px`;
+frame = (frame + 1) % totalFrames;
+}, 50);
+</script>
 </body>
 </html>
